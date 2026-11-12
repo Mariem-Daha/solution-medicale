@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Solution Médicale</title>
+<meta name="description" content="Politique de confidentialité de l'application Solution Médicale (Android et iPhone).">
+<style>
+  :root { --bg: #f6f7f9; --card: #fff; --text: #16202e; --muted: #5a6778; --line: #e3e7ec; --accent: #0f5c8c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1626; --card: #11233c; --text: #e8edf3; --muted: #a7b4c5; --line: #22395a; --accent: #7cc4f0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 28px; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -.5px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 22px 18px; margin-top: 18px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  nav { display: flex; gap: 14px; margin-top: 10px; font-size: 15px; }
+  .en { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+  small { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Politique de confidentialité</h1>
+  <p>Application « Solution Médicale » pour Android et iPhone — en vigueur le 9 novembre 2026</p>
+  <nav><a href="#fr">Français</a><a href="#en">English</a></nav>
+</header>
+
+<div id="fr">
+<section class="card">
+  <h2>En bref</h2>
+  <ul>
+    <li>L'application sert aux <b>médecins d'une clinique</b> à consulter et compléter les dossiers de leurs patients.</li>
+    <li>Elle communique <b>uniquement avec le serveur de la clinique</b>, sur le réseau Wi-Fi de la clinique.
+      Aucune donnée n'est envoyée à Solution Médicale ni à un tiers.</li>
+    <li>Pas de publicité, pas de mesure d'audience, pas de pistage, aucune vente de données.</li>
+    <li>La dictée vocale est reconnue <b>sur le téléphone lui-même</b> : la voix n'est jamais enregistrée ni envoyée.</li>
+  </ul>
+</section>
+
+<h2>1. Qui sommes-nous</h2>
+<p>L'application est éditée par <b>Solution Médicale</b>. Contact : <a href="mailto:mariem.dahaa@gmail.com">mariem.dahaa@gmail.com</a>.</p>
+<p>Les dossiers des patients appartiennent à la clinique qui utilise l'application : la clinique est
+<b>responsable du traitement</b> de ces données. Solution Médicale fournit le logiciel et n'a pas accès aux dossiers.</p>
+
+<h2>2. Données traitées et pourquoi</h2>
+<ul>
+  <li><b>Dossiers médicaux des patients</b> (identité, consultations, ordonnances, hospitalisations, constantes, bons,
+    honoraires) : affichés et saisis par le médecin. Ils restent sur le serveur de la clinique ; l'application
+    n'en garde aucune copie sur le téléphone, sauf les documents (PDF) que le médecin choisit lui-même d'enregistrer.</li>
+  <li><b>Liaison du téléphone</b> : en scannant le QR code affiché par le logiciel de la clinique, le téléphone reçoit
+    une clé secrète et le certificat de la clinique, conservés dans le stockage sécurisé du téléphone (Android Keystore,
+    Trousseau iOS). Le serveur de la clinique enregistre le nom, le modèle, la version du système et de l'application
+    du téléphone, pour que la clinique voie et puisse retirer les téléphones liés.</li>
+  <li><b>Code à 4 chiffres</b> : conservé uniquement sur le téléphone, sous forme chiffrée (empreinte), jamais envoyé.</li>
+  <li><b>Empreinte digitale / Face ID</b> : vérifiés par le système du téléphone ; l'application ne reçoit
+    que la réponse « reconnu » ou « non reconnu ».</li>
+  <li><b>Caméra</b> : uniquement pour lire le QR code de liaison. Aucune image n'est enregistrée ni envoyée.</li>
+  <li><b>Micro</b> : uniquement pendant la dictée demandée par le médecin. La reconnaissance se fait sur le téléphone,
+    hors ligne ; le son n'est ni enregistré ni transmis. Seul le texte obtenu est écrit dans le champ choisi.</li>
+</ul>
+
+<h2>3. Partage</h2>
+<p>Aucune donnée n'est partagée avec des tiers, vendue ou utilisée à des fins publicitaires. Les seuls échanges ont
+lieu entre le téléphone et le serveur de la clinique.</p>
+
+<h2>4. Sécurité</h2>
+<ul>
+  <li>Connexions chiffrées (HTTPS) vers le seul serveur de la clinique liée, dont le certificat est vérifié.</li>
+  <li>Accès protégé par le code du médecin (ou empreinte / Face ID) ; la clinique peut retirer un téléphone à tout moment.</li>
+  <li>Après plusieurs codes erronés, le téléphone oublie sa liaison.</li>
+  <li>Sur Android, les captures d'écran des dossiers sont bloquées ; sur iPhone, l'écran est masqué dans le sélecteur d'applications.</li>
+</ul>
+
+<h2>5. Conservation et suppression</h2>
+<p>Sur le téléphone : « Retirer ce téléphone » dans l'application, ou sa désinstallation, efface la liaison, le code
+et toutes les données de l'application. Sur le serveur : les dossiers sont conservés par la clinique selon les règles
+applicables aux dossiers médicaux.</p>
+
+<h2>6. Mode démonstration</h2>
+<p>« Découvrir l'application » présente des patients fictifs, sans connexion à une clinique ; rien n'est envoyé.</p>
+
+<h2>7. Vos droits</h2>
+<p>Les patients exercent leurs droits (accès, rectification…) auprès de la clinique qui tient leur dossier.
+Pour toute question sur l'application : <a href="mailto:mariem.dahaa@gmail.com">mariem.dahaa@gmail.com</a>.</p>
+
+<h2>8. Public</h2>
+<p>Application réservée aux professionnels de santé ; elle ne s'adresse pas aux enfants.</p>
+
+<h2>9. Modifications</h2>
+<p>Toute modification de cette politique sera publiée sur cette page, avec sa date d'entrée en vigueur.</p>
+</div>
+
+<div id="en" class="en" lang="en">
+<h2>Privacy policy (English)</h2>
+<p><b>Solution Médicale</b> is an app for a clinic's doctors to view and update their patients' medical records.
+Publisher: Solution Médicale — <a href="mailto:mariem.dahaa@gmail.com">mariem.dahaa@gmail.com</a>. The clinic using the
+app is the controller of its patients' data; the publisher has no access to it.</p>
+<ul>
+  <li><b>The app talks only to the clinic's own server</b>, over the clinic's Wi-Fi, through encrypted HTTPS
+    connections verified against the clinic's certificate. No data is sent to the publisher or any third party.</li>
+  <li>Patient records are shown and entered by the doctor and stay on the clinic's server; the app keeps no copy on
+    the phone except PDF documents the doctor chooses to save.</li>
+  <li>Linking (QR code): a device secret and the clinic's certificate are kept in the phone's secure storage; the
+    clinic's server records the phone's name, model and system/app version so the clinic can see and revoke it.</li>
+  <li>The 4-digit code is stored only on the phone, as a hash. Fingerprint / Face ID are checked by the phone's
+    system; the app only receives the result.</li>
+  <li>Camera: only to scan the linking QR code; no image is stored or sent. Microphone: only during dictation,
+    recognised on the phone, offline; audio is never stored or transmitted.</li>
+  <li>No ads, no analytics, no tracking, no data sold or shared.</li>
+  <li>“Retirer ce téléphone” or uninstalling erases everything the app holds on the phone. Records on the server are
+    kept by the clinic under the rules for medical records; patients exercise their rights with the clinic.</li>
+  <li>The demonstration (“Découvrir l'application”) uses fictional patients and sends nothing.</li>
+  <li>For healthcare professionals only; not directed at children.</li>
+</ul>
+<p><small>Effective 9 November 2026.</small></p>
+</div>
+</main>
+</body>
+</html>
