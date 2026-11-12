@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution Médicale — Démonstration</title>
+<meta name="description" content="Essayer toute l'application Solution Médicale sans clinique : patients fictifs, liaison, code, empreinte.">
+<style>
+  :root { --bg: #f6f7f9; --card: #fff; --text: #16202e; --muted: #5a6778; --line: #e3e7ec; --accent: #0f5c8c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1626; --card: #11233c; --text: #e8edf3; --muted: #a7b4c5; --line: #22395a; --accent: #7cc4f0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -.5px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin: 0 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 22px 16px; margin-top: 16px; }
+  .qrbox { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+  .qr { width: 220px; height: 220px; background: #fff; border-radius: 12px; padding: 4px; flex: none; }
+  .open { display: inline-block; margin-top: 8px; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { .open { color: #0b1626; } }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  code { font-size: 14px; word-break: break-all; }
+  .en { margin-top: 40px; padding-top: 8px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Essayer Solution Médicale</h1>
+  <p class="lead">Toute l'application fonctionne sans clinique, avec des patients fictifs. Rien n'est envoyé : ce qui est
+    saisi reste dans la mémoire du téléphone.</p>
+
+  <div class="card">
+    <h2>1. Démonstration rapide</h2>
+    <p>Sur le premier écran, touchez <b>Découvrir l'application</b> : consultations, hospitalisations et constantes,
+      examens, rendez-vous, bons des médicaments, honoraires (impression et PDF), dictée. Les fiches, ordonnances,
+      bulletins d'analyse, documents et rendez-vous s'enregistrent comme à la clinique.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Liaison, code et empreinte (clinique de démonstration)</h2>
+    <div class="qrbox">
+      <svg class="qr" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280"><title>QR code : clinique de démonstration</title><g transform="scale(8)"><path fill="#fff" d="M0 0h35v35h-35z"/><path class="qrline" stroke="#0b1626" d="M3 3.5h7m6 0h2m1 0h3m3 0h7m-29 1h1m5 0h1m1 0h3m1 0h1m6 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h2m1 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m5 0h1m3 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h3m1 0h4m3 0h1m-19 1h1m1 0h4m1 0h5m2 0h1m1 0h3m1 0h2m1 0h2m1 0h1m-28 1h6m2 0h2m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m-26 1h1m2 0h4m3 0h3m1 0h1m2 0h2m2 0h2m1 0h2m-24 1h4m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m-27 1h2m2 0h3m1 0h1m1 0h2m1 0h3m2 0h2m1 0h2m1 0h1m1 0h2m-26 1h1m1 0h1m1 0h4m2 0h2m2 0h2m3 0h3m3 0h1m-27 1h1m1 0h1m1 0h4m1 0h1m1 0h1m1 0h2m2 0h4m1 0h1m1 0h3m-29 1h3m1 0h2m2 0h1m2 0h3m1 0h1m7 0h4m-27 1h1m1 0h1m1 0h1m1 0h1m2 0h3m2 0h2m2 0h4m1 0h1m3 0h2m-29 1h1m1 0h1m1 0h1m3 0h2m1 0h1m5 0h1m1 0h3m2 0h4m-28 1h3m1 0h1m1 0h2m6 0h1m1 0h1m1 0h3m3 0h1m3 0h1m-29 1h3m6 0h4m2 0h2m2 0h1m1 0h2m3 0h1m1 0h1m-29 1h2m4 0h1m1 0h3m5 0h2m1 0h8m-19 1h1m1 0h3m1 0h2m2 0h1m1 0h1m3 0h2m1 0h1m-28 1h7m4 0h1m2 0h2m1 0h4m1 0h1m1 0h1m1 0h2m-28 1h1m5 0h1m1 0h2m3 0h1m3 0h1m1 0h2m3 0h2m1 0h2m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h3m1 0h9m3 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m3 0h2m1 0h1m1 0h1m3 0h1m-28 1h1m1 0h3m1 0h1m3 0h1m3 0h3m1 0h1m1 0h2m1 0h3m1 0h2m-29 1h1m5 0h1m1 0h1m2 0h2m3 0h1m4 0h1m1 0h4m1 0h1m-29 1h7m2 0h2m1 0h1m1 0h2m3 0h2m1 0h1m1 0h1"/></g></svg>
+
+      <div>
+        <p style="margin-top:0">Dans l'application, touchez <b>Scanner le QR code</b> et visez ce code.</p>
+        <p>Sur le téléphone lui-même : <br><a class="open" href="solutionmedicale://lier?demo=1">Ouvrir dans l'application</a></p>
+        <p>Ou dans la démonstration : <b>Mon compte → Essayer la liaison et le code</b>.</p>
+      </div>
+    </div>
+    <ol>
+      <li>Choisissez un code à 4 chiffres, puis confirmez-le.</li>
+      <li>Si le téléphone a une empreinte ou la reconnaissance du visage, l'application propose de l'activer.</li>
+      <li><b>Mon compte → Verrouiller l'application</b> : le code (ou l'empreinte) est demandé. Il l'est aussi au
+        redémarrage et après 3 minutes en arrière-plan.</li>
+      <li>Cinq codes erronés délient le téléphone. <b>Mon compte → Retirer ce téléphone</b> le délie aussi.</li>
+    </ol>
+  </div>
+
+  <section class="en" lang="en">
+    <h2>For reviewers (English)</h2>
+    <p><b>Quick demo:</b> tap <b>« Découvrir l'application »</b> on the first screen. Every screen is available with
+      fictional patients; records, prescriptions, analysis requests, documents, appointments and medicine requests can
+      be saved, and fees can be printed or saved as a PDF. Nothing leaves the phone.</p>
+    <p><b>Linking and security:</b> tap <b>« Scanner le QR code »</b> and scan the QR code above (or open this page on
+      the phone and tap <b>« Ouvrir dans l'application »</b>, or in the demo: <b>Mon compte → Essayer la liaison et le
+      code</b>). This links the phone to a demonstration clinic: choose and confirm a 4-digit code, optionally enable
+      fingerprint/face unlock, then try <b>Mon compte → Verrouiller l'application</b> (lock), a restart, wrong codes
+      (5 wrong codes unlink the phone) and <b>Retirer ce téléphone</b> (remove the phone).</p>
+    <p>Link: <code>solutionmedicale://lier?demo=1</code></p>
+  </section>
+
+  <p style="margin-top:32px"><a href="../">Assistance</a> · <a href="../confidentialite/">Politique de confidentialité</a></p>
+</main>
+</body>
+</html>
